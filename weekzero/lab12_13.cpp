@@ -18,12 +18,12 @@ int main() {
 
     //Assignment 55 
     float celsius, fahren; 
-    cout << "Enter an temperature (celsius)" << endl; 
-    cin >> fahren; 
+    cout << "Enter an temperature (in celsius)" << endl; 
+    cin >> celsius; 
 
-    celsius = (9.0/5.0)*fahren + 32; 
+    fahren = (9.0/5.0)*celsius + 32; 
 
-    cout << "The temperature you entered in celsius is: " << celsius << endl;
+    cout << "The temperature you entered in farenheit is: " << fahren << endl;
 
     //Assignment 56 
     int start, end; 
@@ -37,6 +37,28 @@ int main() {
             cout << i << " ";  
         }
     }
+    cout << endl;
+
+    //Assignment 57 
+    int credit; 
+    cout << "Enter current amount of credit: " << endl;
+    cin >> credit; 
+
+    if(credit >= 94){ 
+        cout << "senior"; 
+    }
+    else if(credit >= 61){
+        cout << "junior";
+    }
+    else if(credit >= 28){
+        cout << "sophomore";
+    }
+    else{
+        cout << "freshemen";
+    }
+
+    //Assignment 58 
+
 
     return 0;
 }
