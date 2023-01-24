@@ -7,14 +7,17 @@ using namespace std;
 
 int main() {
 
+
     //Assignment 53
     cout << "Hello World!" << endl << "C++ is fun!" << endl;
     
+
     //Assignment 54
     int i;
     for (i=0; i<10; i++){
         cout << sixTen << endl;
     }
+
 
     //Assignment 55 
     float celsius, fahren; 
@@ -24,6 +27,7 @@ int main() {
     fahren = (9.0/5.0)*celsius + 32; 
 
     cout << "The temperature you entered in farenheit is: " << fahren << endl;
+
 
     //Assignment 56 
     int start, end; 
@@ -38,6 +42,7 @@ int main() {
         }
     }
     cout << endl;
+
 
     //Assignment 57 
     int credit; 
@@ -57,6 +62,7 @@ int main() {
         cout << "freshemen" << endl;
     }
 
+
     //Assignment 58 
     int num;
     cout << "Enter an int: " << endl;
@@ -66,7 +72,7 @@ int main() {
     cout << "Enter a symbol other than space: " << endl;
     cin >> symbol; 
 
-    for(int l=1; l<=num; l++){
+    for(int l=1; l<=num; l++){           //l for lines, sp for space, sy for symbol
         for(int sp=num-l; sp>0; sp--)
             cout << " ";
         for(int sy=1; sy<=l; sy++){
@@ -74,6 +80,36 @@ int main() {
         }
     cout << endl;
     }
+
+
+    //Assignment 59 
+    int m;
+
+    float annBudget; 
+    cout << "Input your annual budget: " << endl; 
+    cin >> annBudget; 
+
+    float monExpense;
+    cout << "Input your month expense: " << endl; 
+    cin >> monExpense; 
+
+    cout << "month" << "   expense" << " remaining balance of budget" << endl;
+
+    for(m=1; m<=6; m++){        //From Jan to Jun
+        printf("%5d\t%7.2f\t%27.2f\n", m, monExpense, annBudget -= monExpense);
+    }
+
+    monExpense = monExpense * 1.15;     //From Jul to Dec
+    for(m=7; m<=12; m++){
+        printf("%5d\t%7.2f\t%27.2f\n", m, monExpense, annBudget -= monExpense);
+    }
+    if(annBudget -= monExpense < 0){
+        printf("Need higher budget");
+    }
+
+
+    //Assignment 60 
+    
 
     return 0;
 }
