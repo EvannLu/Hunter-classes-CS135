@@ -45,20 +45,35 @@ int main() {
     cin >> credit; 
 
     if(credit >= 94){ 
-        cout << "senior"; 
+        cout << "senior" << endl; 
     }
     else if(credit >= 61){
-        cout << "junior";
+        cout << "junior" << endl;
     }
     else if(credit >= 28){
-        cout << "sophomore";
+        cout << "sophomore" << endl;
     }
     else{
-        cout << "freshemen";
+        cout << "freshemen" << endl;
     }
 
     //Assignment 58 
+    int num;
+    cout << "Enter an int: " << endl;
+    cin >> num; 
 
+    char symbol; 
+    cout << "Enter a symbol other than space: " << endl;
+    cin >> symbol; 
+
+    for(int l=1; l<=num; l++){
+        for(int sp=num-l; sp>0; sp--)
+            cout << " ";
+        for(int sy=1; sy<=l; sy++){
+            cout << symbol; 
+        }
+    cout << endl;
+    }
 
     return 0;
 }
