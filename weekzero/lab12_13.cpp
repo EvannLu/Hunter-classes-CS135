@@ -25,6 +25,19 @@ int main() {
 
     cout << "The temperature you entered in celsius is: " << celsius << endl;
 
+    //Assignment 56 
+    int start, end; 
+    cout << "Enter a starting number: " << endl; 
+    cin >> start; 
+    cout << "Enter a ending number: " << endl; 
+    cin >> end; 
+
+    for (i=start; i<end; i++){ 
+        if(i%2==0){
+            cout << i << " ";  
+        }
+    }
+
     return 0;
 }
 
